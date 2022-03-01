@@ -5,10 +5,20 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: content/industry/*
+  label: Industry
+  create: all
+  match: "**/*"
+- type: directory
   path: content
   label: Services
   create: all
   match: "*"
+- type: directory
+  path: content/careers/*
+  label: Careers
+  create: all
+  match: "**/*"
 - type: directory
   path: content/post
   label: Blog
@@ -20,6 +30,11 @@ sections:
 - type: directory
   path: content/about
   label: About Us
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/contact/*
+  label: Contact Us
   create: all
   match: "**/*"
 upload_dir: static/images
