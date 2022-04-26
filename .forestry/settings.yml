@@ -5,8 +5,8 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: content/industry/*
-  label: Industry
+  path: content/about
+  label: About Us
   create: all
   match: "**/*"
 - type: directory
@@ -14,6 +14,11 @@ sections:
   label: Services
   create: all
   match: "*"
+- type: directory
+  path: content/industry/*
+  label: Industry
+  create: all
+  match: "**/*"
 - type: directory
   path: content/careers/*
   label: Careers
@@ -27,11 +32,6 @@ sections:
   exclude: _index.md
   templates:
   - post
-- type: directory
-  path: content/about
-  label: About Us
-  create: all
-  match: "**/*"
 - type: directory
   path: content/contact/*
   label: Contact Us
